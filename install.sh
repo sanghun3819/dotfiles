@@ -9,6 +9,10 @@ rm -v ~/.gitconfig
 rm -v ~/.inputrc
 
 # Create links
+if [ ! -d "$HOME/.config/fish/functions" ]; then
+    mkdir -v -p "$HOME/.config/fish/functions"
+fi
+
 ln -sv ~/.dotfiles/config.fish $HOME/.config/fish/config.fish
 ln -sv ~/.dotfiles/fish_mode_prompt.fish $HOME/.config/fish/functions/fish_mode_prompt.fish
 ln -sv ~/.dotfiles/init.vim ~/.config/nvim/init.vim
