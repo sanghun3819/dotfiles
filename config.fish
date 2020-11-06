@@ -1,11 +1,11 @@
 fish_vi_key_bindings
 
 # CUDA
-set PATH /usr/local/cuda/bin $PATH
-set LD_LIBRARY_PATH /usr/local/cuda/lib64 $LD_LIBRARY_PATH
+set -x PATH /usr/local/cuda/bin $PATH
+set -x LD_LIBRARY_PATH /usr/local/cuda/lib64 $LD_LIBRARY_PATH
 # Mujoco
-set LD_LIBRARY_PATH $HOME/.mujoco/mujoco200/bin $LD_LIBRARY_PATH
-# set LD_LIBRARY_PATH $HOME/.mujoco/mjpro150/bin $LD_LIBRARY_PATH
+set -x LD_LIBRARY_PATH $HOME/.mujoco/mujoco200/bin $LD_LIBRARY_PATH
+# set -x LD_LIBRARY_PATH $HOME/.mujoco/mjpro150/bin $LD_LIBRARY_PATH
 
 # alias
 alias ns="nvidia-smi"
