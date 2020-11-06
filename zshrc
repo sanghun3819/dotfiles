@@ -98,8 +98,10 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.mujoco/mujoco200/bin
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ns="nvidia-smi"
+alias wns="watch -n 1 nvidia-smi"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
