@@ -30,3 +30,7 @@ ln -sv $HOME/.dotfiles/init.vim $HOME/.config/nvim/init.vim
 ln -sv $HOME/.dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sv $HOME/.dotfiles/gitconfig $HOME/.gitconfig
 ln -sv $HOME/.dotfiles/inputrc $HOME/.inputrc
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+source $HOME/.zshrc
