@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/usr/bin/env sh
 
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     echo "Install Oh-My-Zsh"
@@ -31,6 +31,9 @@ ln -sv $HOME/.dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sv $HOME/.dotfiles/gitconfig $HOME/.gitconfig
 ln -sv $HOME/.dotfiles/inputrc $HOME/.inputrc
 
+# Additional zsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 source $HOME/.zshrc
