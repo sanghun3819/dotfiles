@@ -102,6 +102,7 @@ alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ns="nvidia-smi"
 alias wns="watch -n 1 nvidia-smi"
+bindkey '^ ' autosuggest-accept
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
